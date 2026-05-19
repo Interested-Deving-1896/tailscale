@@ -1,87 +1,75 @@
-# Tailscale
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# tailscale
 
-https://tailscale.com
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/tailscale)
 
-Private WireGuard® networks made easy
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## Overview
+## Architecture
 
-This repository contains the majority of Tailscale's open source code.
-Notably, it includes the `tailscaled` daemon and
-the `tailscale` CLI tool. The `tailscaled` daemon runs on Linux, Windows,
-[macOS](https://tailscale.com/kb/1065/macos-variants/), and to varying degrees
-on FreeBSD and OpenBSD. The Tailscale iOS and Android apps use this repo's
-code, but this repo doesn't contain the mobile GUI code.
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Other [Tailscale repos](https://github.com/orgs/tailscale/repositories) of note:
+## Install
 
-* the Android app is at https://github.com/tailscale/tailscale-android
-* the Synology package is at https://github.com/tailscale/tailscale-synology
-* the QNAP package is at https://github.com/tailscale/tailscale-qpkg
-* the Chocolatey packaging is at https://github.com/tailscale/tailscale-chocolatey
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-For background on which parts of Tailscale are open source and why,
-see [https://tailscale.com/opensource/](https://tailscale.com/opensource/).
-
-## Using
-
-We serve packages for a variety of distros and platforms at
-[https://pkgs.tailscale.com](https://pkgs.tailscale.com/).
-
-## Other clients
-
-The [macOS, iOS, and Windows clients](https://tailscale.com/download)
-use the code in this repository but additionally include small GUI
-wrappers. The GUI wrappers on non-open source platforms are themselves
-not open source.
-
-## Building
-
-We always require the latest Go release, currently Go 1.26. (While we build
-releases with our [Go fork](https://github.com/tailscale/go/), its use is not
-required.)
-
-```
-go install tailscale.com/cmd/tailscale{,d}
+```bash
+git clone https://github.com/Interested-Deving-1896/tailscale.git
+cd tailscale
 ```
 
-If you're packaging Tailscale for distribution, use `build_dist.sh`
-instead, to burn commit IDs and version info into the binaries:
+## Usage
+
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/tailscale`](https://github.com/Interested-Deving-1896/tailscale) and mirrored through:
 
 ```
-./build_dist.sh tailscale.com/cmd/tailscale
-./build_dist.sh tailscale.com/cmd/tailscaled
+Interested-Deving-1896/tailscale  ──►  OpenOS-Project-OSP/tailscale  ──►  OpenOS-Project-Ecosystem-OOC/tailscale
 ```
 
-If your distro has conventions that preclude the use of
-`build_dist.sh`, please do the equivalent of what it does in your
-distro's way, so that bug reports contain useful version information.
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-## Bugs
+## Contributors
 
-Please file any issues about this code or the hosted service on
-[the issue tracker](https://github.com/tailscale/tailscale/issues).
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-## Contributing
+## Origins
 
-PRs welcome! But please file bugs. Commit messages should [reference
-bugs](https://docs.github.com/en/github/writing-on-github/autolinked-references-and-urls).
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-We require [Developer Certificate of
-Origin](https://en.wikipedia.org/wiki/Developer_Certificate_of_Origin)
-`Signed-off-by` lines in commits.
+## Resources
 
-See [commit-messages.md](docs/commit-messages.md) (or skim `git log`) for our commit message style.
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-## About Us
+## License
 
-[Tailscale](https://tailscale.com/) is primarily developed by the
-people at https://github.com/orgs/tailscale/people. For other contributors,
-see:
-
-* https://github.com/tailscale/tailscale/graphs/contributors
-* https://github.com/tailscale/tailscale-android/graphs/contributors
-
-## Legal
-
-WireGuard is a registered trademark of Jason A. Donenfeld.
+<!-- AI:start:license -->
+[BSD-3-Clause](https://github.com/Interested-Deving-1896/tailscale/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
